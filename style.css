@@ -125,3 +125,39 @@ a{color:inherit;text-decoration:none}button,input,select,textarea{font:inherit}.
     transform: rotate(-360deg);
   }
 }
+
+/* Hero section buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 28px;
+  border-radius: 50px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #a855f7, #7c3aed);
+  color: #ffffff;
+  border: 1px solid #a855f7;
+  box-shadow: 0 0 20px rgba(168, 85, 247, 0.35);
+}
+
+.btn-primary:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 30px rgba(168, 85, 247, 0.6);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: #ffffff;
+  border: 1px solid #a855f7;
+}
+
+.btn-secondary:hover {
+  background: rgba(168, 85, 247, 0.15);
+  transform: translateY(-4px);
+}
