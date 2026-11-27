@@ -369,3 +369,99 @@ a{color:inherit;text-decoration:none}button,input,select,textarea{font:inherit}.
   }
 
 }
+
+/* ==================================
+   CONTACT PAGE - BLACK & GOLD
+================================== */
+
+.contact-page {
+  width: min(1000px, 90%);
+  margin: 0 auto;
+  padding: 100px 0 80px;
+  color: #ffffff;
+}
+
+.contact-heading {
+  max-width: 700px;
+  margin: 0 auto 55px;
+  text-align: center;
+}
+
+.contact-label {
+  color: #d4af62;
+  font-size: 12px;
+  letter-spacing: 3px;
+  font-weight: 600;
+  margin-bottom: 18px;
+}
+
+.contact-heading h1 {
+  font-size: clamp(38px, 6vw, 65px);
+  margin-bottom: 20px;
+}
+
+.contact-heading p:last-child {
+  color: #bdb8ae;
+  font-size: 15px;
+  line-height: 1.9;
+}
+
+/* CONTACT DETAILS CARD */
+
+.contact-card {
+  max-width: 750px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
+}
+
+.contact-item {
+  background: #080808;
+  border: 1px solid rgba(212, 175, 98, 0.3);
+  border-radius: 16px;
+  padding: 30px;
+
+  transition: 0.3s ease;
+}
+
+.contact-item:hover {
+  border-color: #d4af62;
+  transform: translateY(-4px);
+}
+
+.contact-item h2 {
+  color: #d4af62;
+  font-size: 17px;
+  margin-bottom: 15px;
+}
+
+.contact-item a,
+.contact-item p {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 1.8;
+  text-decoration: none;
+  overflow-wrap: anywhere;
+}
+
+.contact-item a:hover {
+  color: #d4af62;
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+  .contact-page {
+    padding: 65px 0;
+  }
+
+  .contact-card {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-item {
+    padding: 24px;
+  }
+}
