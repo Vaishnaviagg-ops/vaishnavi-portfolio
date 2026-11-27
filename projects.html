@@ -5,228 +5,149 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>My Projects | Vaishnavi</title>
+  <title>Projects | Vaishnavi Aggarwal</title>
 
   <link rel="stylesheet" href="style.css">
-
-  <style>
-    .projects-page {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 100px 20px 70px;
-      color: white;
-    }
-
-    .projects-page h1 {
-      text-align: center;
-      font-size: clamp(2.2rem, 5vw, 3.5rem);
-      margin-bottom: 15px;
-    }
-
-    .projects-intro {
-      text-align: center;
-      max-width: 650px;
-      margin: 0 auto 50px;
-      color: #c9c9d4;
-      line-height: 1.8;
-    }
-
-    .project-card {
-      display: grid;
-      grid-template-columns: 1fr 1.5fr;
-      gap: 35px;
-      align-items: center;
-      padding: 35px;
-      margin-bottom: 30px;
-      border: 1px solid rgba(168, 85, 247, 0.35);
-      border-radius: 24px;
-      background: rgba(255, 255, 255, 0.04);
-      transition: 0.3s ease;
-    }
-
-    .project-card:hover {
-      transform: translateY(-6px);
-      border-color: #a855f7;
-      box-shadow: 0 10px 35px rgba(168, 85, 247, 0.15);
-    }
-
-    .project-logo-box {
-      background: white;
-      border-radius: 18px;
-      padding: 25px;
-      min-height: 150px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .project-logo {
-      max-width: 100%;
-      max-height: 110px;
-      object-fit: contain;
-    }
-
-    .project-card h2 {
-      font-size: 1.8rem;
-      margin-bottom: 15px;
-    }
-
-    .project-card p {
-      color: #c9c9d4;
-      line-height: 1.8;
-      margin-bottom: 20px;
-    }
-
-    .project-tag {
-      display: inline-block;
-      padding: 7px 12px;
-      margin: 4px;
-      border-radius: 30px;
-      border: 1px solid rgba(168, 85, 247, 0.5);
-      color: #d8b4fe;
-      font-size: 0.85rem;
-    }
-
-    .project-link {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 12px 24px;
-      border-radius: 30px;
-      background: linear-gradient(135deg, #a855f7, #7c3aed);
-      color: white;
-      text-decoration: none;
-      font-weight: 600;
-      transition: 0.3s ease;
-    }
-
-    .project-link:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 0 20px rgba(168, 85, 247, 0.4);
-    }
-
-    @media (max-width: 700px) {
-      .project-card {
-        grid-template-columns: 1fr;
-        padding: 22px;
-        gap: 25px;
-      }
-
-      .project-logo-box {
-        min-height: 120px;
-      }
-
-      .project-card h2 {
-        font-size: 1.5rem;
-      }
-    }
-  </style>
 </head>
 
 <body>
 
-  <header>
-    <nav class="navbar">
-      <a href="index.html" class="logo">Vaishnavi</a>
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <a href="index.html" class="logo">
+      Vaishnavi<span class="gold-text">.</span>
+    </a>
 
-      <div class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="services.html">Services</a>
-        <a href="projects.html">Projects</a>
-        <a href="contact.html">Contact</a>
-      </div>
-    </nav>
-  </header>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="projects.html" class="active">Projects</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
 
+  <!-- PROJECTS PAGE -->
   <main class="projects-page">
 
-    <h1>My <span class="gold-text">Projects</span></h1>
+    <section class="projects-heading">
+      <p class="projects-label">MY WORK & EXPERIENCE</p>
 
-    <p class="projects-intro">
-      Here are some of the companies I have worked with
-      and gained practical experience in digital marketing
-      and online business activities.
-    </p>
+      <h1>
+        Projects &amp; <span class="gold-text">Experience</span>
+      </h1>
 
-    <!-- OpenStartup Project -->
-    <div class="project-card">
+      <p class="projects-description">
+        Exploring digital marketing, building online visibility
+        and helping businesses grow through creative digital
+        solutions.
+      </p>
+    </section>
 
-      <div class="project-logo-box">
-        <a href="https://openstartup.in/" target="_blank" rel="noopener">
+    <!-- PROJECT CARDS -->
+    <section class="projects-grid">
+
+      <!-- OPENSTARTUP -->
+      <article class="project-card">
+
+        <div class="project-logo-area">
           <img
-            src="https://openstartup.in/wp-content/uploads/2024/01/Grow-Faster-Sell-More-e1782891379494-768x241.png"
+            src="openstartup-logo.png"
             alt="OpenStartup original logo"
-            class="project-logo"
+            class="project-logo openstartup-logo"
           >
-        </a>
-      </div>
+        </div>
 
-      <div class="project-info">
-        <h2>OpenStartup</h2>
+        <div class="project-details">
 
-        <p>
-          I gained practical experience in digital marketing
-          activities, SEO, website content and online brand
-          promotion while working with OpenStartup.
-        </p>
+          <p class="project-type">DIGITAL MARKETING</p>
 
-        <span class="project-tag">SEO</span>
-        <span class="project-tag">Digital Marketing</span>
-        <span class="project-tag">Website Content</span>
+          <h2>OpenStartup</h2>
 
-        <br>
+          <p class="project-description">
+            Practical experience in digital marketing activities,
+            website content and online brand visibility.
+            Working on strategies that help businesses improve
+            their digital presence.
+          </p>
 
-        <a
-          href="https://openstartup.in/"
-          target="_blank"
-          rel="noopener"
-          class="project-link"
-        >
-          Visit Website ↗
-        </a>
-      </div>
+          <div class="project-skills">
+            <span>SEO</span>
+            <span>Website Content</span>
+            <span>Digital Marketing</span>
+          </div>
 
-    </div>
+          <a
+            href="https://openstartup.in/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="project-website-link"
+          >
+            Visit Website <span>↗</span>
+          </a>
 
-    <!-- RealKeeper Project -->
-    <div class="project-card">
+        </div>
+      </article>
 
-      <div class="project-logo-box">
-        <a href="https://realkeeper.in/" target="_blank" rel="noopener">
+      <!-- REALKEEPER -->
+      <article class="project-card">
+
+        <div class="project-logo-area">
           <img
-            src="https://realkeeper.in/images/logo.png"
-            alt="RealKeeper logo"
-            class="project-logo"
+            src="realkeeper-logo.png"
+            alt="RealKeeper original logo"
+            class="project-logo realkeeper-logo"
           >
-        </a>
-      </div>
+        </div>
 
-      <div class="project-info">
-        <h2>RealKeeper</h2>
+        <div class="project-details">
 
-        <p>
-          I gained practical experience in software promotion,
-          social media content, product-related marketing
-          and communicating software features to businesses.
-        </p>
+          <p class="project-type">SOFTWARE MARKETING</p>
 
-        <span class="project-tag">Social Media</span>
-        <span class="project-tag">Content Creation</span>
-        <span class="project-tag">Software Marketing</span>
+          <h2>RealKeeper</h2>
 
-        <br>
+          <p class="project-description">
+            Practical experience in software promotion,
+            product-focused content and social media marketing.
+            Creating informative content to communicate
+            software features to businesses.
+          </p>
 
-        <a
-          href="https://realkeeper.in/"
-          target="_blank"
-          rel="noopener"
-          class="project-link"
-        >
-          Visit Website ↗
-        </a>
-      </div>
+          <div class="project-skills">
+            <span>Social Media</span>
+            <span>Content Writing</span>
+            <span>Promotion</span>
+          </div>
 
-    </div>
+          <a
+            href="https://realkeeper.in/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="project-website-link"
+          >
+            Visit Website <span>↗</span>
+          </a>
+
+        </div>
+      </article>
+
+    </section>
+
+    <!-- BOTTOM CTA -->
+    <section class="projects-contact">
+      <h2>
+        Let's create something
+        <span class="gold-text">great.</span>
+      </h2>
+
+      <p>
+        Have a project or business idea? Let's connect.
+      </p>
+
+      <a href="contact.html" class="btn btn-primary">
+        Let's Connect
+      </a>
+    </section>
 
   </main>
 
