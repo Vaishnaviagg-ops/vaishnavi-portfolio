@@ -778,3 +778,155 @@ a{color:inherit;text-decoration:none}button,input,select,textarea{font:inherit}.
     justify-content: center;
   }
 }
+
+/* Contact Page - Project Enquiry Form */
+
+.portfolio-enquiry {
+  display: grid;
+  grid-template-columns: 1fr 1.15fr;
+  gap: 50px;
+  align-items: center;
+  max-width: 1200px;
+  margin: 70px auto;
+  padding: 40px 24px;
+  color: #f5f1e8;
+}
+
+.enquiry-intro {
+  max-width: 520px;
+}
+
+.enquiry-label {
+  color: #d6ad55;
+  font-size: 13px;
+  letter-spacing: 3px;
+  font-weight: 700;
+}
+
+.enquiry-intro h1 {
+  font-size: clamp(38px, 5vw, 62px);
+  line-height: 1.12;
+  margin: 20px 0;
+}
+
+.enquiry-intro h1 span {
+  display: block;
+  color: #d6ad55;
+}
+
+.enquiry-description {
+  color: #bdb7ad;
+  line-height: 1.8;
+  margin-bottom: 28px;
+}
+
+.enquiry-services {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.enquiry-services li {
+  color: #c7c0b5;
+  margin: 18px 0;
+}
+
+.enquiry-card {
+  background: #171717;
+  border: 1px solid rgba(214, 173, 85, 0.25);
+  border-radius: 18px;
+  padding: 32px;
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.25);
+}
+
+.enquiry-card h2 {
+  font-size: 30px;
+  margin: 0 0 8px;
+  color: #f5f1e8;
+}
+
+.enquiry-subtitle {
+  color: #aaa399;
+  margin-bottom: 28px;
+}
+
+#whatsappEnquiryForm {
+  display: flex;
+  flex-direction: column;
+}
+
+#whatsappEnquiryForm label {
+  color: #e8e1d5;
+  font-size: 13px;
+  font-weight: 600;
+  margin: 16px 0 9px;
+}
+
+#whatsappEnquiryForm input,
+#whatsappEnquiryForm select,
+#whatsappEnquiryForm textarea {
+  width: 100%;
+  box-sizing: border-box;
+  background: #090909;
+  border: 1px solid rgba(214, 173, 85, 0.25);
+  border-radius: 10px;
+  padding: 15px;
+  color: #f5f1e8;
+  font: inherit;
+  outline: none;
+}
+
+#whatsappEnquiryForm input:focus,
+#whatsappEnquiryForm select:focus,
+#whatsappEnquiryForm textarea:focus {
+  border-color: #d6ad55;
+}
+
+#whatsappEnquiryForm textarea {
+  resize: vertical;
+}
+
+.enquiry-submit {
+  margin-top: 25px;
+  padding: 17px 20px;
+  border: none;
+  border-radius: 50px;
+  background: linear-gradient(135deg, #d6ad55, #f0d18a);
+  color: #111;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.enquiry-submit:hover {
+  transform: translateY(-3px);
+}
+
+.enquiry-submit span {
+  margin-left: 8px;
+}
+
+.enquiry-note {
+  color: #aaa399;
+  font-size: 12px;
+  line-height: 1.6;
+  margin-top: 15px;
+}
+
+@media (max-width: 800px) {
+  .portfolio-enquiry {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    margin: 35px auto;
+    padding: 25px 18px;
+  }
+
+  .enquiry-card {
+    padding: 22px;
+  }
+
+  .enquiry-card h2 {
+    font-size: 25px;
+  }
+}
