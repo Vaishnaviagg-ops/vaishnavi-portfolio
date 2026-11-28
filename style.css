@@ -1515,3 +1515,9 @@ a{color:inherit;text-decoration:none}button,input,select,textarea{font:inherit}.
     gap: 25px;
     margin: 0 auto;
 }
+.logo img {
+  height: 55px;
+  width: auto;
+  display: block;
+  object-fit: contain;
+}
