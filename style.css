@@ -930,3 +930,161 @@ a{color:inherit;text-decoration:none}button,input,select,textarea{font:inherit}.
     font-size: 25px;
   }
 }
+
+/* Premium Enquiry Form Styling */
+
+.portfolio-enquiry {
+  position: relative;
+  overflow: hidden;
+  background: radial-gradient(
+    circle at top left,
+    rgba(214, 173, 85, 0.09),
+    transparent 45%
+  );
+  border-radius: 25px;
+  animation: enquiryFadeIn 1s ease both;
+}
+
+/* Golden decorative glow */
+
+.portfolio-enquiry::before {
+  content: "";
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  top: -100px;
+  left: -100px;
+  background: rgba(214, 173, 85, 0.08);
+  filter: blur(70px);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+/* Heading style */
+
+.enquiry-intro h1 {
+  letter-spacing: -1.5px;
+  text-shadow: 0 0 25px rgba(214, 173, 85, 0.12);
+}
+
+.enquiry-intro h1 span {
+  background: linear-gradient(
+    90deg,
+    #c99a3d,
+    #f5d98b,
+    #c99a3d
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+/* Service list */
+
+.enquiry-services li {
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.enquiry-services li:hover {
+  color: #f0d18a;
+  transform: translateX(8px);
+}
+
+/* Form card */
+
+.enquiry-card {
+  position: relative;
+  background: linear-gradient(
+    145deg,
+    #191919,
+    #101010
+  );
+  border: 1px solid rgba(214, 173, 85, 0.35);
+  box-shadow:
+    0 20px 60px rgba(0, 0, 0, 0.45),
+    0 0 25px rgba(214, 173, 85, 0.04);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.enquiry-card:hover {
+  transform: translateY(-5px);
+  box-shadow:
+    0 25px 70px rgba(0, 0, 0, 0.55),
+    0 0 35px rgba(214, 173, 85, 0.10);
+}
+
+/* Form heading */
+
+.enquiry-card h2 {
+  color: #f5d98b;
+  letter-spacing: -0.5px;
+}
+
+.enquiry-subtitle {
+  font-size: 14px;
+}
+
+/* Input focus effects */
+
+#whatsappEnquiryForm input,
+#whatsappEnquiryForm select,
+#whatsappEnquiryForm textarea {
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+#whatsappEnquiryForm input:focus,
+#whatsappEnquiryForm select:focus,
+#whatsappEnquiryForm textarea:focus {
+  border-color: #d6ad55;
+  box-shadow: 0 0 15px rgba(214, 173, 85, 0.12);
+}
+
+/* Stylish WhatsApp button */
+
+.enquiry-submit {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(
+    120deg,
+    #b8892e,
+    #f5d98b,
+    #c99a3d
+  );
+  box-shadow: 0 8px 25px rgba(214, 173, 85, 0.18);
+  letter-spacing: 0.3px;
+}
+
+.enquiry-submit:hover {
+  box-shadow: 0 12px 35px rgba(214, 173, 85, 0.30);
+  transform: translateY(-4px) scale(1.01);
+}
+
+/* Smooth entrance animation */
+
+@keyframes enquiryFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Mobile adjustment */
+
+@media (max-width: 600px) {
+  .portfolio-enquiry {
+    border-radius: 15px;
+  }
+
+  .enquiry-intro h1 {
+    letter-spacing: -1px;
+  }
+
+  .enquiry-card {
+    border-radius: 15px;
+  }
+}
