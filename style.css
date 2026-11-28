@@ -1440,3 +1440,14 @@ a{color:inherit;text-decoration:none}button,input,select,textarea{font:inherit}.
         font-size: 13px;
     }
 }
+
+/* Center content on inner pages */
+
+.about-page,
+.services-section,
+.projects-section,
+.contact-section {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
