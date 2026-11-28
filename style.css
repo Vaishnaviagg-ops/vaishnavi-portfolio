@@ -1088,3 +1088,200 @@ a{color:inherit;text-decoration:none}button,input,select,textarea{font:inherit}.
     border-radius: 15px;
   }
 }
+
+/* ===== Premium About Page ===== */
+
+.about-page {
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 30px 24px;
+  color: #f5f1e8;
+  animation: aboutAppear 0.8s ease;
+}
+
+.about-hero {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 50px;
+  align-items: center;
+  padding: 55px 40px;
+  border: 1px solid rgba(214, 173, 85, 0.22);
+  border-radius: 24px;
+  background: radial-gradient(
+    circle at top left,
+    rgba(214, 173, 85, 0.10),
+    transparent 45%
+  ), #111;
+}
+
+.about-eyebrow {
+  color: #d6ad55;
+  font-size: 12px;
+  letter-spacing: 3px;
+  font-weight: 700;
+}
+
+.about-intro h1 {
+  font-size: clamp(42px, 6vw, 70px);
+  line-height: 1.1;
+  margin: 20px 0;
+}
+
+.about-intro h1 span,
+.about-info-card h2 span {
+  color: #d6ad55;
+}
+
+.about-lead {
+  font-size: 19px;
+  line-height: 1.8;
+  color: #e5dfd4;
+}
+
+.about-description {
+  color: #aaa399;
+  line-height: 1.9;
+  margin: 20px 0 30px;
+}
+
+.about-button {
+  display: inline-block;
+  padding: 15px 28px;
+  border-radius: 50px;
+  background: linear-gradient(120deg, #b8892e, #f0d18a);
+  color: #111;
+  font-weight: 700;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.about-button:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px rgba(214, 173, 85, 0.25);
+}
+
+/* Highlight cards */
+
+.about-highlight {
+  display: grid;
+  gap: 18px;
+}
+
+.about-highlight-card {
+  padding: 25px;
+  border-radius: 16px;
+  border: 1px solid rgba(214, 173, 85, 0.25);
+  background: #191919;
+  transition: 0.3s ease;
+}
+
+.about-highlight-card:hover {
+  transform: translateX(7px);
+  border-color: #d6ad55;
+  box-shadow: 0 0 25px rgba(214, 173, 85, 0.08);
+}
+
+.highlight-number {
+  display: block;
+  color: #e4bd68;
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.about-highlight-card p {
+  color: #bdb7ad;
+  margin: 8px 0 0;
+}
+
+/* Education and skills */
+
+.about-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.about-info-card {
+  padding: 32px;
+  border-radius: 18px;
+  background: #151515;
+  border: 1px solid rgba(214, 173, 85, 0.22);
+  transition: 0.3s ease;
+}
+
+.about-info-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(214, 173, 85, 0.55);
+}
+
+.about-info-card h2 {
+  font-size: 28px;
+  margin: 15px 0;
+}
+
+.about-info-card > p:last-child {
+  color: #bdb7ad;
+  line-height: 1.8;
+}
+
+/* Skill chips */
+
+.about-skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 22px;
+}
+
+.about-skill-list span {
+  padding: 10px 16px;
+  border-radius: 30px;
+  border: 1px solid rgba(214, 173, 85, 0.35);
+  color: #e5c477;
+  background: rgba(214, 173, 85, 0.06);
+  transition: 0.3s ease;
+}
+
+.about-skill-list span:hover {
+  background: #d6ad55;
+  color: #111;
+  transform: translateY(-3px);
+}
+
+/* Entrance animation */
+
+@keyframes aboutAppear {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Mobile responsive */
+
+@media (max-width: 800px) {
+  .about-page {
+    margin: 25px auto;
+    padding: 15px;
+  }
+
+  .about-hero {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 30px 22px;
+  }
+
+  .about-details {
+    grid-template-columns: 1fr;
+  }
+
+  .about-info-card {
+    padding: 25px;
+  }
+}
