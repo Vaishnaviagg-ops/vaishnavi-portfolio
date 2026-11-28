@@ -124,5 +124,32 @@
 
   </main>
 
+<script>
+document.getElementById("whatsappEnquiryForm").addEventListener("submit", function(event) {
+  event.preventDefault();
+
+  const name = document.getElementById("enquiryName").value.trim();
+  const address = document.getElementById("enquiryAddress").value.trim();
+  const phone = document.getElementById("enquiryPhone").value.trim();
+  const service = document.getElementById("enquiryService").value;
+  const details = document.getElementById("enquiryDetails").value.trim();
+
+  const message =
+    "Hello Vaishnavi! I am interested in your services.\n\n" +
+    "Name: " + name + "\n" +
+    "Address / City: " + address + "\n" +
+    "Phone: " + phone + "\n" +
+    "Service: " + service + "\n" +
+    "Project Details: " + details;
+
+  const whatsappNumber = "918796319615";
+
+  const whatsappURL =
+    "https://wa.me/" + whatsappNumber + "?text=" + encodeURIComponent(message);
+
+  window.open(whatsappURL, "_blank");
+});
+</script>
+
 </body>
 </html>
